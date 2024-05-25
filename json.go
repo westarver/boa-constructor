@@ -7,12 +7,16 @@ import (
 	"github.com/westarver/boa"
 )
 
+// json.go takes the slice of boa.CmdLineitem structs
+// and outputs it to a JSON formattted byte slice
+
 type sliceWrap struct {
 	Commands []boa.CmdLineItem `json:"commands"`
 }
 
 func slice2json() []byte {
 	var jslice sliceWrap
+
 	// create app data record and put it first.  not a real command
 	jslice.Commands = append(jslice.Commands, boa.CmdLineItem{
 		Id:        -1,
@@ -41,6 +45,6 @@ func slice2json() []byte {
 		log.Printf("unable to marshal commands/flags to JSON: %v", err)
 		return nil
 	}
-	//fmt.Println("\nbytes", string(jsonBytes))
+
 	return jsonBytes
 }

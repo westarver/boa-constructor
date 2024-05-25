@@ -7,6 +7,8 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
+// flagTab will create the widgets to enter flags
+// and the help strings associated with each flag.
 func flagTab() *fyne.Container {
 	//form1-----------------
 	label1 := widget.NewLabel(Label1TextFlag)

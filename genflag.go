@@ -9,6 +9,10 @@ import (
 	"github.com/westarver/boa"
 )
 
+// this file takes care of the task of creating the structs
+// and managing the slice of structs that the user creates
+// in the flag tab
+
 type flagInfoStore struct {
 	flags   []boa.CmdLineItem
 	current boa.CmdLineItem

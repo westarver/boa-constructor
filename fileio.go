@@ -243,6 +243,8 @@ func doLoadJSON(uwc fyne.URIReadCloser, e error) {
 	}
 
 	resetAll()
+	// read 1st object of json data and if it is the
+	// appdata object treat it specially then delete it
 	if appdata, ok := imap[appDataName]; ok {
 		appData.appName.SetText(appdata.Alias)
 		appData.pkg.SetText(appdata.ShortHelp)

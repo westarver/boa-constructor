@@ -8,6 +8,8 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
+// commandTab will create the widgets to enter commands
+// and the help strings associated with each command.
 func commandTab() *fyne.Container {
 	//form1-----------------
 	label1 := widget.NewLabel(Label1Text)

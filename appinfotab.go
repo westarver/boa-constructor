@@ -9,6 +9,9 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
+// appInfoTab is the code to create and populate the first Tab
+// where application data such as app name and package name is
+// gathered.  The preview screen is presented on this tab as well
 func appInfoTab() *fyne.Container {
 	snake := widget.NewButtonWithIcon("", *appData.icon, nil)
 	infoLabel1 := widget.NewLabelWithStyle("Application Data", fyne.TextAlignTrailing, fyne.TextStyle{Bold: true})

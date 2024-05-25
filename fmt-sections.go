@@ -7,6 +7,15 @@ import (
 	"github.com/westarver/boa"
 )
 
+// the code in this source file will take the data objects
+// created from the GUI input and turn it into an input
+// script with meta-characters to denote the various options
+// associated with each command/flag, such as number of
+// parameters, type of parameters, exclusivity of command,
+// required/optional status.  A cleaned version of the input
+// script, minus the meta-characters, can then be generated
+// to serve as the help text for your cli app.
+
 func (c *cmdInfoStore) commandSection() string {
 	var sb strings.Builder
 	app := "[app-name]"
