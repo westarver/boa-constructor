@@ -1,7 +1,9 @@
 package main
 
-import boa_gui "github.com/westarver/boa-constructor"
+import (
+	boac "github.com/westarver/boa-constructor"
+)
 
 func main() {
-	boa_gui.Run()
+	boac.Run()
 }

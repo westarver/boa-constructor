@@ -1,0 +1,18 @@
+package clargs
+
+import (
+	"fyne.io/fyne/v2/widget"
+)
+
+type MoreInfoStore struct {
+	MoreSec *widget.Entry
+}
+
+var MoreInfo = MoreInfoStore{}
+
+func (m *MoreInfoStore) MoreSection() string {
+	if len(m.MoreSec.Text) > 0 {
+		return m.MoreSec.Text
+	}
+	return ""
+}
