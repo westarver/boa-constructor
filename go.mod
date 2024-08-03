@@ -5,7 +5,7 @@ go 1.22.2
 require (
 	fyne.io/fyne/v2 v2.4.4-rc2.0.20240220215900-3c111a2ff7e9
 	github.com/sqweek/dialog v0.0.0-20240226140203-065105509627
-	github.com/westarver/boa v0.0.0-20240801225325-417e44fc3bab
+	github.com/westarver/boa v0.0.0-20240803142740-5e39605627f3
 	github.com/westarver/fynewidgets v0.0.0-20240507131951-ea23ff0eaf3f
 )
 
